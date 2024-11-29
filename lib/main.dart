@@ -16,70 +16,50 @@ class FigmaToCodeApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: ListView(children: [
-          HomeIndicator(),
+          OnboardingLaunchScreen(),
         ]),
       ),
     );
   }
 }
 
-class HomeIndicator extends StatelessWidget {
+class OnboardingLaunchScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Container(
           width: 375,
-          height: 34,
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
+          height: 812,
+          clipBehavior: Clip.antiAlias,
+          decoration: BoxDecoration(color: Colors.white),
+          child: Stack(
             children: [
-              Container(
-                width: 375,
-                height: 34,
-                padding: const EdgeInsets.only(
-                  top: 21,
-                  left: 121,
-                  right: 120,
-                  bottom: 8,
+              Positioned(
+                left: 0,
+                top: 0,
+                child: Container(
+                  width: 376,
+                  height: 812,
+                  decoration: BoxDecoration(color: Color(0xFF7E3DFF)),
                 ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 134,
-                      height: 5,
-                      decoration: ShapeDecoration(
-                        color: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(100),
-                        ),
-                      ),
-                    ),
-                  ],
+              ),
+              Positioned(
+                left: 38,
+                top: 380,
+                child: Text(
+                  'MoneyMinder',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 44,
+                    fontFamily: 'Inter',
+                    fontWeight: FontWeight.w700,
+                    height: 0,
+                  ),
                 ),
               ),
             ],
-          ),
-        ),
-        Container(
-          width: 376,
-          height: 812,
-          decoration: BoxDecoration(color: Color(0xFF7E3DFF)),
-        ),
-        Text(
-          'MoneyMinder',
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 44,
-            fontFamily: 'Inter',
-            fontWeight: FontWeight.w700,
-            height: 0,
           ),
         ),
       ],
