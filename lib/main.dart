@@ -67,114 +67,6 @@ class HomeIndicator extends StatelessWidget {
           ),
         ),
         Container(
-          width: 375,
-          height: 44,
-          padding: const EdgeInsets.only(
-            top: 14,
-            left: 19.89,
-            right: 14.50,
-            bottom: 12,
-          ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              SizedBox(
-                width: 54,
-                child: Text(
-                  '9:41',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 15,
-                    fontFamily: 'Inter',
-                    fontWeight: FontWeight.w600,
-                    height: 0.08,
-                    letterSpacing: -0.17,
-                  ),
-                ),
-              ),
-              Container(
-                width: 67,
-                height: 11.50,
-                child: Stack(
-                  children: [
-                    Positioned(
-                      left: 42.50,
-                      top: 0,
-                      child: Container(
-                        width: 24.50,
-                        height: 11.50,
-                        child: Stack(
-                          children: [
-                            Positioned(
-                              left: 0,
-                              top: 0,
-                              child: Container(
-                                width: 24.50,
-                                height: 11.50,
-                                decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                    image: NetworkImage("https://via.placeholder.com/24x11"),
-                                    fit: BoxFit.fill,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Positioned(
-                              left: 2,
-                              top: 1.92,
-                              child: Container(
-                                width: 18,
-                                height: 7.67,
-                                decoration: ShapeDecoration(
-                                  color: Colors.white,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(1.60),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      left: 0,
-                      top: 0.44,
-                      child: Container(
-                        width: 17.10,
-                        height: 10.70,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: NetworkImage("https://via.placeholder.com/17x11"),
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      left: 22.10,
-                      top: 0.24,
-                      child: Container(
-                        width: 15.40,
-                        height: 11.06,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: NetworkImage("https://via.placeholder.com/15x11"),
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-        Container(
           width: 376,
           height: 812,
           decoration: BoxDecoration(color: Color(0xFF7E3DFF)),
@@ -188,17 +80,6 @@ class HomeIndicator extends StatelessWidget {
             fontFamily: 'Inter',
             fontWeight: FontWeight.w700,
             height: 0,
-          ),
-        ),
-        Transform(
-          transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(3.14),
-          child: Container(
-            width: 74,
-            height: 74,
-            decoration: ShapeDecoration(
-              color: Color(0xFFFCAC12),
-              shape: OvalBorder(),
-            ),
           ),
         ),
       ],
