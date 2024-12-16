@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "941076430262",
+    "project_id": "money-minder-8bec8",
+    "storage_bucket": "money-minder-8bec8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941076430262:android:041ae6d603af5f31831517",
+        "android_client_info": {
+          "package_name": "com.example.money_minder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJn37ZM74uAUlgir-kpzNEywL0PnCHOzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
